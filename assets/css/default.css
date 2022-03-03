@@ -1,0 +1,66 @@
+/* variables */
+:root {
+  /* colors backgrounds */
+  --color-bg-app: #0d1f0f;
+  --color-bg-nav: rgba(0, 0, 0, 0.5);
+  --color-bg-footer: rgba(0, 0, 0, 0.5);
+
+  /* colors texts */
+  --color-text-p: rgba(255, 255, 255, 0.8);
+  --color-text-h1: rgba(255, 255, 255, 0.7);
+  --color-text-credits: rgba(255, 255, 255, 0.637);
+
+  /* font styles */
+  /* --font-thin: 100; */
+
+  /* fonts sizes */
+  /* --font-size-nav: 1.2em; */
+
+  /* font colors */
+  /* --color-font-nav: #7d7d7d; */
+}
+
+@media (min-width: 991.98px) {
+  #app {
+    grid-template-rows: 17vh 74vh 8vh;
+  }
+  /* .layer-top-exercise {
+  } */
+}
+
+#app {
+  display: grid;
+  padding: 0;
+  margin: 0px;
+  background-color: var(--color-bg-app);
+
+  grid-template-rows: 17vh 72vh 11vh;
+
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+}
+
+#header {
+  grid-area: header;
+  background-color: var(--color-bg-nav);
+}
+#main {
+  grid-area: main;
+}
+
+#footer {
+  grid-area: footer;
+  background-color: var(--color-bg-footer);
+  color: var(--color-text-credits);
+  align-items: center;
+}
+html {
+  overflow: hidden;
+  background-color: var(--color-bg-app);
+}
+
+h1 {
+  color: var(--color-text-h1) !important;
+}

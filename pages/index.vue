@@ -1,5 +1,5 @@
 <template>
-<div id="home-page">
+<div id="home-page" class="">
   <h1>PÁGINA INICIAL</h1>
 </div>
 </template>
@@ -10,3 +10,7 @@ export default {
   layout: "default"
 }
 </script>
+
+<style scoped>
+
+</style>

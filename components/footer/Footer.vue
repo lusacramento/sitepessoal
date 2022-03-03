@@ -1,6 +1,10 @@
 <template>
-  <div id="footer-credits">
-      <h1>RODAPÉ</h1>
+  <div id="footer-credits" class="container-fluid">
+    <div class="row text-center">
+      <div class="col">
+      <p>2022. lusacramento. Todos Direitos Reservados.</p>
+      </div>
+    </div>
   </div>
 </template>
 
