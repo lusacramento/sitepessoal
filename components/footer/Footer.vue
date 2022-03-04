@@ -2,7 +2,13 @@
   <div id="footer-credits" class="container-fluid">
     <div class="row text-center">
       <div class="col">
-      <p>2022. lusacramento. Todos Direitos Reservados.</p>
+        <p>
+          © Copyright 2022
+          <strong>https://lusacramento.com.br</strong>
+          - All Rights Reserved.
+          <br />
+          Develped with <a href="https://nuxtjs.org" rel="nofollow"> NuxtJS</a>.
+        </p>
       </div>
     </div>
   </div>
@@ -10,10 +16,8 @@
 
 <script>
 export default {
-    name: "FooterCredits"
+  name: 'FooterCredits',
 }
 </script>
 
-<style>
-
-</style>
+<style></style>
