@@ -3,7 +3,7 @@
     <div id="header" class="d-flex">
       <Nav :test="imgBg" />
     </div>
-    <main id="main" class="router-view">
+    <main id="main" class="router-view d-flex">
       <Nuxt />
     </main>
     <div id="footer" class="container-fluid">
