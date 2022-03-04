@@ -1,59 +1,32 @@
 <template>
-  <div id="nav">
-    <div class="row">
-      <div class="col-10">
-        <div v-if="!mobile">
-          <p class="title">Lu Sacramento</p>
-          ;
-        </div>
-        <div v-else>
-          <p class="title">LS</p>
-        </div>
-      </div>
-      <div class="col-2 img-header"></div>
-    </div>
+  <div id="nav" class="container-fluid d-flex align-items-center">
+    <div class="title">Lu Sacramento</div>
   </div>
 </template>
 
 <script>
-import IconHeader from '@/assets/imgs/logo-ls-header.png'
 export default {
   name: 'NavBar',
+  props: {
+    test: {
+      type: Number,
+      default: 0,
+      required: false,
+    },
+  },
 
   data() {
-    return {
-      icons: {
-        logoHeader: {
-          url: IconHeader,
-          altText: 'Logotipo Lu Sacramento',
-        },
-      },
-      mobile: true,
-    }
+    return {}
   },
-    watch: {
-      mobile(newMobile) {
-        return newMobile
-      }
-    },
-
-  mounted() {
-    this.mobile = this.mobileVerify()
-  },
-
-
-  methods: {
-    mobileVerify() {
-      let isMobile = false
-      if (
-        navigator.userAgentData !== undefined &&
-        navigator.userAgentData.mobile
-      ) {
-        isMobile = true;
-      }
-      return isMobile
+  watch: {
+    mobile(newMobile) {
+      return newMobile
     },
   },
+
+  mounted() {},
+
+  methods: {},
 }
 </script>
 
@@ -69,6 +42,6 @@ export default {
 .title {
   font-family: 'Musicografi';
   font-size: 2.5em;
-  color: rgba(255, 217, 0, 0.726);
+  color: rgba(233, 222, 160, 0.74);
 }
 </style>

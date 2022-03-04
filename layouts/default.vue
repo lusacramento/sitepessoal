@@ -1,13 +1,13 @@
 <template>
-  <div id="app" class="container-fluid">
-    <div id="header" class="container-fluid">
-      <Nav />
+  <div id="app" class="image-bg-1">
+    <div id="header" class="d-flex">
+      <Nav :test="imgBg" />
     </div>
     <main id="main" class="router-view">
       <Nuxt />
     </main>
     <div id="footer" class="container-fluid">
-    <Footer />
+      <Footer />
     </div>
   </div>
 </template>
@@ -18,13 +18,32 @@ import Footer from '@/components/footer/Footer'
 export default {
   name: 'DefaultLayout',
   components: { Nav, Footer },
+  data() {
+    return {
+      imgBg: 0,
+    }
+  },
+  created() {
+    this.swapBg()
+  },
+  methods: {
+    swapBg() {
+      setInterval(() => {
+        this.imgBg++
+      }, 4000)
+    },
+  },
 }
 </script>
 
 <style>
 #app {
-  background-image: url("/fone-lu-sacramento.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}</style>
+}
+
+.image-bg-1 {
+  background-image: url('/fone-lu-sacramento.jpg');
+}
+</style>
