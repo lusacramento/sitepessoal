@@ -1,14 +1,13 @@
 <template>
-  <div id="footer-credits" class="container-fluid">
-    <div class="row text-center">
+  <div id="footer-credits" class="container-fluid credits">
+    <div class="row justify-items-center align-items-center text-center">
       <div class="col">
-        <p>
-          © Copyright 2022
-          <strong>https://lusacramento.com.br</strong>
-          - All Rights Reserved.
-          <br />
-          Develped with <a href="https://nuxtjs.org" rel="nofollow"> NuxtJS</a>.
-        </p>
+        © Copyright 2022
+        <br />
+        <strong>https://lusacramento.com.br</strong>
+        - All Rights Reserved.
+        <br />
+        Develped with <a href="https://nuxtjs.org" rel="nofollow"> NuxtJS</a>.
       </div>
     </div>
   </div>
@@ -20,4 +19,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.credits {
+  font-size: 0.8em !important;
+}
+</style>
