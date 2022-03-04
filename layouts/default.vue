@@ -6,7 +6,7 @@
     <main id="main" class="router-view d-flex">
       <Nuxt />
     </main>
-    <div id="footer" class="container-fluid">
+    <div id="footer" class="d-flex">
       <Footer />
     </div>
   </div>
