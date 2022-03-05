@@ -1,6 +1,6 @@
 <template>
   <div id="nav" class="container-fluid d-flex align-items-center">
-    <div class="title">Lu Sacramento</div>
+    <div class="title"><a href="/">Lu Sacramento</a></div>
   </div>
 </template>
 

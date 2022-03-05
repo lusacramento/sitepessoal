@@ -18,6 +18,7 @@ import Footer from '@/components/footer/Footer'
 export default {
   name: 'DefaultLayout',
   components: { Nav, Footer },
+
   data() {
     return {
       imgBg: 0,

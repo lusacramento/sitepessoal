@@ -15,9 +15,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    '@/assets/css/default.css'
-  ],
+  css: ['@/assets/css/default.css', '@/assets/css/fonts.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -29,6 +27,18 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    // googlefonts
+    [
+      '@nuxtjs/google-fonts',
+      {
+        families: {
+          'Smooch+Sans': true,
+          wght: [500],
+        },
+        display: 'swap',
+        download: true,
+      },
+    ],
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
