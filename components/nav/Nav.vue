@@ -1,6 +1,8 @@
 <template>
   <div id="nav" class="container-fluid d-flex align-items-center">
-    <div class="title"><a href="/">Lu Sacramento</a></div>
+    <div class="title animate__animated animate__swing">
+      <a href="/">Lu Sacramento</a>
+    </div>
   </div>
 </template>
 
@@ -31,17 +33,9 @@ export default {
 </script>
 
 <style scoped>
-@font-face {
-  font-family: 'Musicografi';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('~assets/fonts/Musicografi.ttf') format('truetype');
-}
-
 .title {
   font-family: 'Musicografi';
-  font-size: 2.5em;
+  font-size: 3em;
   color: rgba(233, 222, 160, 0.74);
 }
 </style>

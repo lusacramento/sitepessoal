@@ -15,10 +15,14 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['@/assets/css/default.css', '@/assets/css/fonts.css'],
+  css: [
+    '@/assets/css/default.css',
+    '@/assets/css/fonts.css',
+    'animate.css/animate.compat.css',
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ['plugins/animate.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

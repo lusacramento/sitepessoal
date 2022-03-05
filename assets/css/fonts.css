@@ -1,2 +1,9 @@
 /* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@500&display=swap');
+@font-face {
+  font-family: 'Musicografi';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~assets/fonts/Musicografi.ttf') format('truetype');
+}
