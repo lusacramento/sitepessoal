@@ -2,6 +2,11 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  // router for github pages
+  router: {
+    base: '/sitepessoal/',
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'sitepessoal',
