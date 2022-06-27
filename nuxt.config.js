@@ -24,6 +24,7 @@ export default {
     '@/assets/css/default.css',
     '@/assets/css/fonts.css',
     'animate.css/animate.compat.css',
+    '@/assets/css/customCSS.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -53,7 +54,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/bootstrap
-    'bootstrap-vue/nuxt',
+    // 'bootstrap',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
   ],

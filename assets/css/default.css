@@ -1,11 +1,16 @@
 /* variables */
 :root {
   /* Dark */
-  --color-bg-dark: rgba(0, 0, 0, 1);
-  --color-text-dark: rgba(F, F, F, 1);
+  --color-bg-dark: #012030;
+  --color-h1-dark: #dafdba;
+  --color-h2-dark: #9aeba3;
+  --color-h3-dark: #45c4b0;
+
   /* Light */
-  --color-bg-light: rgba(F, F, F, 1);
-  --color-text-light: rgba(0, 0, 0, 1);
+  --color-bg-light: #dafdba;
+  --color-h1-light: #012030;
+  --color-h2-light: #13678a;
+  --color-h3-light: #45c4b0;
 }
 
 #app {
@@ -13,12 +18,77 @@
   height: 100vh;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* LIGHT THEME */
+
 .lightTheme {
   background-color: var(--color-bg-light);
-  color: var(--color-text-light);
+  color: var(--color-h1-light);
 }
+
+.lightTheme h1 {
+  color: var(--color-h1-light);
+}
+
+.lightTheme h2 {
+  color: var(--color-h2-light);
+}
+
+.lightTheme h3 {
+  color: var(--color-h3-light);
+}
+
+/* DARK THEME */
 
 .darkTheme {
   background-color: var(--color-bg-dark);
-  color: var(--color-text-dark);
+  color: var(--color-h1-dark);
+}
+
+.darkTheme h1 {
+  color: var(--color-h1-dark);
+}
+
+.darkTheme h2 {
+  color: var(--color-h2-dark);
+}
+
+.darkTheme h3 {
+  color: var(--color-h3-dark);
+}
+
+/* BOTH THEMES */
+
+h1 {
+  font-size: 5rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 20px;
+}
+
+h2 {
+  font-size: 2.8rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 20px;
+}
+
+h3 {
+  font-size: 1.5rem !important;
+  font-weight: 300 !important;
+}
+
+/* GRID */
+.top-layer {
+  height: 20vh;
+}
+
+.center-layer {
+  height: 43vh;
+}
+.bottom-layer {
+  height: 20vh;
 }

@@ -1,5 +1,5 @@
 <template>
-  <div id="themes-selector">
+  <div id="themes-selector" class="top-layer">
     <img
       class="img"
       :src="activedTheme.url"
@@ -89,6 +89,6 @@ export default {
   width: 35px;
   height: 35px;
   cursor: pointer;
-  border: solid 1px grey;
+  border: solid 1px rgba(0, 0, 0, 0.5);
 }
 </style>
