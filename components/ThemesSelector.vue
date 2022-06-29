@@ -26,8 +26,6 @@ export default {
 
   data() {
     return {
-      //   isDarkMode: true,
-
       themeLight: {
         url: imgJpgLight,
         alt: 'light',

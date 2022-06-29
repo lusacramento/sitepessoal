@@ -1,94 +1,83 @@
 /* variables */
 :root {
+  /* palette */
+  --color-cinza-escuro: #202022;
+  --color-cinza-claro: #878787;
+  --color-azul-fosco: #00747c;
+  --color-azul-brilhante: #00bbc9;
+  --color-branco: #dbdbdb;
+
+  --color-cinza-escuro-50: rgb(32, 32, 34, 0.5);
+  --color-branco-50: rgb(219, 219, 219, 0.5);
+
+  /* Backgrounds*/
   /* Dark */
-  --color-bg-dark: #012030;
-  --color-h1-dark: #dafdba;
-  --color-h2-dark: #9aeba3;
-  --color-h3-dark: #45c4b0;
+  --color-bg-dark: var(--color-cinza-escuro);
 
   /* Light */
-  --color-bg-light: #dafdba;
-  --color-h1-light: #012030;
-  --color-h2-light: #13678a;
-  --color-h3-light: #45c4b0;
-}
-
-#app {
-  width: 100vw;
-  height: 100vh;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0 !important;
-  padding: 0 !important;
+  --color-bg-light: var(--color-branco);
 }
 
 /* LIGHT THEME */
 
 .lightTheme {
   background-color: var(--color-bg-light);
-  color: var(--color-h1-light);
 }
 
-.lightTheme h1 {
-  color: var(--color-h1-light);
+.lightTheme .first-name {
+  color: var(--color-cinza-claro);
 }
 
-.lightTheme h2 {
-  color: var(--color-h2-light);
+.lightTheme .last-name {
+  color: var(--color-cinza-escuro);
 }
 
-.lightTheme h3 {
-  color: var(--color-h3-light);
+.lightTheme #footer {
+  color: var(--color-cinza-escuro-50);
 }
 
 /* DARK THEME */
 
 .darkTheme {
   background-color: var(--color-bg-dark);
-  color: var(--color-h1-dark);
 }
 
-.darkTheme h1 {
-  color: var(--color-h1-dark);
+.darkTheme .first-name {
+  color: var(--color-cinza-claro);
 }
 
-.darkTheme h2 {
-  color: var(--color-h2-dark);
+.darkTheme .last-name {
+  color: var(--color-branco);
 }
 
-.darkTheme h3 {
-  color: var(--color-h3-dark);
+.darkTheme #footer {
+  color: var(--color-branco-50);
 }
-
 /* BOTH THEMES */
 
-h1 {
+.first-name {
+  font-family: 'Bebas Neue', cursive;
   font-size: 5rem !important;
   font-weight: 700 !important;
   letter-spacing: 20px;
 }
 
-h2 {
+.last-name {
+  font-family: 'Bebas Neue', cursive;
   font-size: 2.8rem !important;
   font-weight: 700 !important;
-  letter-spacing: 20px;
+  letter-spacing: 25px;
 }
 
-h3 {
-  font-size: 1.5rem !important;
-  font-weight: 300 !important;
+a {
+  color: var(--color-azul-fosco) !important;
+  font-size: 1.3rem;
+  font-family: 'JetBrains Mono', monospace;
+  text-decoration: none !important;
+  font-weight: 200;
 }
 
-/* GRID */
-.top-layer {
-  height: 20vh;
-}
-
-.center-layer {
-  height: 43vh;
-}
-.bottom-layer {
-  height: 20vh;
+a:hover {
+  color: var(--color-azul-brilhante) !important;
+  font-weight: 400;
 }

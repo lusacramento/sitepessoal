@@ -1,27 +1,64 @@
 <template>
   <div id="home-page" class="container-fluid">
-    <div
-      class="center-layer row d-flex justify-content-center align-items-center"
-    >
-      <div class="col-4 text-end">
-        <h1 class="lu my-4">L</h1>
-        <h1 class="lu my-4">u</h1>
+    <div class="title-layer"></div>
+    <div class="center-layer">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-4 text-end">
+          <div class="first-name my-4 animate__animated animate__backInRight">
+            L
+          </div>
+          <div
+            class="first-name lu my-4 animate__animated animate__backInRight"
+          >
+            u
+          </div>
+        </div>
+        <div class="col-3 d-flex justify-content-center">
+          <img
+            class="img-profile"
+            :src="imgProfile"
+            alt="Imagem da face de Lu Sacramento"
+          />
+        </div>
+        <div class="col-4"></div>
       </div>
-      <div class="col-3 d-flex justify-content-center">
-        <img
-          class="img-profile"
-          :src="imgProfile"
-          alt="Imagem da face de Lu Sacramento"
-        />
+      <div class="row d-flex text-center">
+        <div class="col">
+          <div
+            class="last-name text-center animate__animated animate__rollIn animate__delay-1s"
+          >
+            Sacramento
+          </div>
+        </div>
       </div>
-      <div class="col-4"></div>
     </div>
-    <div class="row d-flex text-center">
-      <div class="col">
-        <h2 class="text-center">Sacramento</h2>
-        <h3><a href="/desenvolvedor-web">Desenvolvedor Web</a></h3>
-        <h3><a href="/musico-compositor-e-professor">Músico</a></h3>
-        <h3><a href="/reaja-comigo">Reaja!</a></h3>
+    <div class="bottom-layer">
+      <div class="row d-flex text-center">
+        <div class="col">
+          <a
+            href="/desenvolvedor-web"
+            class="animate__animated animate__zoomInDown animate__delay-2s"
+            >Desenvolvedor Web</a
+          >
+        </div>
+      </div>
+      <div class="row d-flex text-center">
+        <div class="col">
+          <a
+            href="/musico-compositor-e-professor"
+            class="animate__animated animate__zoomInDown animate__delay-3s"
+            >Músico</a
+          >
+        </div>
+      </div>
+      <div class="row d-flex text-center">
+        <div class="col">
+          <a
+            href="/reaja-comigo"
+            class="animate__animated animate__zoomInDown animate__delay-4s"
+            >Reaja!</a
+          >
+        </div>
       </div>
     </div>
   </div>
@@ -44,8 +81,5 @@ export default {
 .img-profile {
   width: 300px;
   border-radius: 10px 10px 30px 100px;
-}
-.center-layer {
-  height: 45vh;
 }
 </style>
