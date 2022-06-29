@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002Fsitepessoal\u002F_nuxt\u002Fstatic\u002F1656296265",layout:"default",error:a,serverRendered:true,routePath:"\u002Fmusico-compositor-e-professor",config:{_app:{basePath:"\u002Fsitepessoal\u002F",assetsPath:"\u002Fsitepessoal\u002F_nuxt\u002F",cdnURL:a}}}}(null));
