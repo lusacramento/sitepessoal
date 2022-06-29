@@ -79,7 +79,7 @@ body {
   letter-spacing: 25px;
 }
 
-a {
+.a {
   color: var(--color-azul-fosco) !important;
   font-size: 1.3rem;
   font-family: 'JetBrains Mono', monospace;
@@ -87,7 +87,7 @@ a {
   font-weight: 200;
 }
 
-a:hover {
+.a:hover {
   color: var(--color-azul-brilhante) !important;
   font-weight: 400;
 }

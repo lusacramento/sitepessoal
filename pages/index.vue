@@ -35,29 +35,19 @@
     <div class="bottom-layer">
       <div class="row d-flex text-center">
         <div class="col">
-          <a
-            href="/desenvolvimento-web"
-            class="animate__animated animate__zoomInDown animate__delay-2s"
-            >Desenvolvedor Web</a
-          >
+          <NuxtLink to="/desenvolvimento-web" class="a">
+            Desenvolvimento Web
+          </NuxtLink>
         </div>
       </div>
       <div class="row d-flex text-center">
         <div class="col">
-          <a
-            href="/musica"
-            class="animate__animated animate__zoomInDown animate__delay-3s"
-            >Músico</a
-          >
+          <NuxtLink to="/musica" class="a"> Música </NuxtLink>
         </div>
       </div>
       <div class="row d-flex text-center">
         <div class="col">
-          <a
-            href="/reaja-comigo"
-            class="animate__animated animate__zoomInDown animate__delay-4s"
-            >Reaja!</a
-          >
+          <NuxtLink to="/reaja-comigo" class="a"> Reaja! </NuxtLink>
         </div>
       </div>
     </div>
