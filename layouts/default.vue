@@ -1,5 +1,5 @@
 <template>
-  <div id="app" :class="{ darkTheme: isDarkMode, lightTheme: !isDarkMode }">
+  <div id="app">
     <div id="color-mode">
       <ColorModePicker />
     </div>
