@@ -36,7 +36,7 @@
       <div class="row d-flex text-center">
         <div class="col">
           <a
-            href="/desenvolvedor-web"
+            href="/desenvolvimento-web"
             class="animate__animated animate__zoomInDown animate__delay-2s"
             >Desenvolvedor Web</a
           >
@@ -45,7 +45,7 @@
       <div class="row d-flex text-center">
         <div class="col">
           <a
-            href="/musico-compositor-e-professor"
+            href="/musica"
             class="animate__animated animate__zoomInDown animate__delay-3s"
             >Músico</a
           >
