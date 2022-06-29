@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/desenvolvedor-web", {data:[{}],fetch:{},mutations:void 0});
