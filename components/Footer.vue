@@ -1,7 +1,13 @@
 <template>
-  <div id="footer-credits" class="credits text-center">
-    <i>&copy; 2022. Todos Direitos Reservados. Feito pelo Autor</i>.
-  </div>
+  <footer class="footer container-fluid">
+    <div class="row d-flex text-center">
+      <div class="col credits">
+        <p>
+          <i>&copy; 2022. Todos Direitos Reservados.<br />Feito pelo Autor</i>.
+        </p>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <script>

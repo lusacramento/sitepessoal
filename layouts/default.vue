@@ -1,14 +1,14 @@
 <template>
-  <div id="app">
-    <div id="color-mode">
+  <div id="app" class="app container-fluid">
+    <div id="nav">
       <ColorModePicker />
     </div>
     <main id="main" class="router-view">
       <Nuxt />
     </main>
-    <footer id="footer">
+    <div id="footer">
       <Footer />
-    </footer>
+    </div>
   </div>
 </template>
 
@@ -24,38 +24,27 @@ export default {
 </script>
 
 <style>
-#app {
+div.app {
   display: grid;
   padding: 0;
   margin: 0;
 
   grid-template-areas:
-    'header'
+    'nav'
     'main'
-    'footer';
-  grid-template-rows: 13vh 80vh 7vh;
+    'foot';
+  grid-template-rows: 7vh 85vh 7vh;
 }
 
-#color-mode {
-  display: flex;
-  justify-content: right;
+#nav {
+  grid-area: nav;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-header {
-  grid-area: header;
-}
-
-main {
+#main {
   grid-area: main;
 }
 
-footer {
-  grid-area: footer;
+#footer {
+  grid-area: foot;
 }
 </style>
