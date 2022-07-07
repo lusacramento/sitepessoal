@@ -4,10 +4,10 @@ export default {
   ssr: false,
 
   // server
-  server: {
-    host: '0',
-    port: 4000,
-  },
+  // server: {
+  //   host: '0',
+  //   port: 3000,
+  // },
 
   // router for github pages
   router: {
