@@ -1,20 +1,20 @@
 <template>
-  <div id="home-page" class="d-flex">
+  <div id="home-page">
     <img
       class="img-profile img-fluid"
       :src="imgProfile"
       alt="Imagem da face de Lu Sacramento"
     />
-    <div class="container-fluid align-items-center">
-      <div class="row justify-content-center">
+    <div class="container-fluid">
+      <div class="row firs-name justify-content-center">
         <div class="col-4 col-lg-1">
           <div
-            class="first-name my-1 my-lg-4 animate__animated animate__backInRight"
+            class="first-name-item my-1 my-lg-4 animate__animated animate__backInRight"
           >
             L
           </div>
           <div
-            class="first-name my-1 my-lg-4 animate__animated animate__backInRight"
+            class="first-name-item my-1 my-lg-4 animate__animated animate__backInRight"
           >
             u
           </div>
@@ -32,21 +32,23 @@
       </div>
 
       <div class="row menu-item d-flex text-center">
-        <div class="col">
-          <NuxtLink to="/desenvolvimento-web" class="a">
-            Desenvolvimento Web
-          </NuxtLink>
+        <div class="col-12">
+          <NuxtLink to="/desenvolvimento-web" class="a"
+            >Desenvolvimento Web</NuxtLink
+          >
+          <div class="col-12">
+            <NuxtLink to="/musica" class="a"> Música </NuxtLink>
+          </div>
+          <col-12>
+            <NuxtLink to="/reaja-comigo" class="a"> Reaja! </NuxtLink>
+          </col-12>
         </div>
       </div>
       <div class="row menu-item d-flex text-center">
-        <div class="col">
-          <NuxtLink to="/musica" class="a"> Música </NuxtLink>
-        </div>
+        <div class="col"></div>
       </div>
       <div class="row menu-item d-flex text-center">
-        <div class="col">
-          <NuxtLink to="/reaja-comigo" class="a"> Reaja! </NuxtLink>
-        </div>
+        <div class="col"></div>
       </div>
     </div>
   </div>
@@ -81,46 +83,49 @@ export default {
   border-radius: 10px 10px 30px 100px;
 }
 
-.teste {
-  width: auto;
-  height: auto;
-}
-
 .first-name {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: var(--first-name-color);
   font-family: 'Bebas Neue', cursive;
   font-weight: 700 !important;
 }
 
+/* MEDIA QUERY NOTE */
 @media (min-width: 991.96px) {
+  .first-name-item {
+    font-size: 5rem !important;
+    letter-spacing: 20px;
+  }
   .last-name {
     font-size: 3.8rem !important;
     letter-spacing: 15px;
   }
-  .first-name {
-    font-size: 5rem !important;
-    letter-spacing: 20px;
-  }
-  .menu-item {
-    padding-top: 1px;
-  }
 }
 
+/* MEDIA QUERY MOBILE */
 @media (max-width: 991.98px) {
   .last-name {
     font-size: 2.5rem !important;
     letter-spacing: 9px;
   }
-  .first-name {
+  .first-name-item {
     font-size: 4rem !important;
     letter-spacing: 5px;
-    margin-bottom: 30px !important;
+    margin-bottom: 15px !important;
   }
-}
-.last-name {
-  color: var(--last-name-color);
-  font-family: 'Bebas Neue', cursive;
-  /* font-size: 1.8rem !important; */
-  font-weight: 700 !important;
+  .last-name {
+    color: var(--last-name-color);
+    font-family: 'Bebas Neue', cursive;
+    /* font-size: 1.8rem !important; */
+    font-weight: 700 !important;
+    padding-top: 20px;
+  }
+  .menu-item {
+    padding-top: 1px;
+  }
 }
 </style>
