@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="app container-fluid">
+  <div id="app" class="app">
     <div id="nav">
       <ColorModePicker />
     </div>
@@ -7,7 +7,7 @@
       <Nuxt />
     </main>
     <div id="footer">
-      <Footer />
+      <Footer></Footer>
     </div>
   </div>
 </template>
