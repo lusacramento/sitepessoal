@@ -29,7 +29,7 @@
         SACRAMENTO
       </div>
     </div>
-    <div class="row bloco-3 d-flex align-items-center text-center">
+    <div class="row bloco-3 d-flex align-items-center text-center nav-menu">
       <div class="col-12">
         <NuxtLink to="/desenvolvimento-web" class="a"
           >Desenvolvimento Web</NuxtLink
@@ -42,52 +42,6 @@
         </div>
       </div>
     </div>
-    <!-- <div class="">
-      <div class="row align-items-end">
-        <div class="col-4 col-lg-12">
-          <div
-            class="first-name-item my-1 my-lg-4 animate__animated animate__backInRight"
-          >
-            L
-          </div>
-          <div
-            class="first-name-item my-1 my-lg-4 animate__animated animate__backInRight"
-          >
-            u
-          </div>
-        </div>
-        <div class="col-5 col-lg-3"></div>
-      </div>
-      <div class="row d-flex text-center">
-        <div class="col">
-          <div
-            class="last-name text-center animate__animated animate__rollIn animate__delay-1s"
-          >
-            Sacramento
-          </div>
-        </div>
-      </div>
-
-      <div class="row menu-item d-flex text-center">
-        <div class="col-12">
-          <NuxtLink to="/desenvolvimento-web" class="a"
-            >Desenvolvimento Web</NuxtLink
-          >
-          <div class="col-12">
-            <NuxtLink to="/musica" class="a"> Música </NuxtLink>
-          </div>
-          <col-12>
-            <NuxtLink to="/reaja-comigo" class="a"> Reaja! </NuxtLink>
-          </col-12>
-        </div>
-      </div>
-      <div class="row menu-item d-flex text-center">
-        <div class="col"></div>
-      </div>
-      <div class="row menu-item d-flex text-center">
-        <div class="col"></div>
-      </div>
-    </div> -->
   </div>
 </template>
 
@@ -95,7 +49,7 @@
 import imgProfile from '~/assets/imgs/img-lusacramento.jpg'
 export default {
   name: 'HomePage',
-  layout: 'default',
+  layout: 'index',
   data() {
     return {
       imgProfile,
@@ -137,6 +91,12 @@ export default {
   color: var(--first-name-color);
   font-family: 'Bebas Neue', cursive;
   font-weight: 700 !important;
+}
+
+.nav-menu {
+  font-size: 1.3rem;
+  text-decoration: none !important;
+  font-weight: 200;
 }
 
 .last-name {

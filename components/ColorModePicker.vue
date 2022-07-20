@@ -1,5 +1,5 @@
 <template>
-  <div class="nav d-flex justify-content-end">
+  <div class="">
     <ul>
       <li v-for="color of colors" :key="color">
         <component

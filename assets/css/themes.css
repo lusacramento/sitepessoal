@@ -79,6 +79,7 @@ a {
 
 a {
   color: var(--color-a);
+  font-family: 'JetBrains Mono', monospace;
 }
 
 a:hover {

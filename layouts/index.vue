@@ -1,8 +1,10 @@
 <template>
   <div id="app" class="app">
-    <div id="nav">
-      <ColorModePicker />
-    </div>
+    <header id="header" class="d-flex justify-content-end">
+      <div class="theme-selector d-flex justify-self-end">
+        <ColorModePicker />
+      </div>
+    </header>
     <main id="main" class="router-view">
       <Nuxt />
     </main>
@@ -30,14 +32,14 @@ div.app {
   margin: 0;
 
   grid-template-areas:
-    'nav'
+    'header'
     'main'
     'foot';
   grid-template-rows: 7vh 85vh 7vh;
 }
 
-#nav {
-  grid-area: nav;
+#header {
+  grid-area: header;
 }
 
 #main {
