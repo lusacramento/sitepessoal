@@ -1,82 +1,68 @@
 <template>
-  <div
-    id="music-page"
-    class="container-fluid d-flex justify-content-around align-items-center"
-  >
-    <div class="title">
-      <h1>Música</h1>
-    </div>
-    <div class="description my-5 algin-items-center">
-      <p>
-        Cria do bairro Novo Glória, região noroeste (NO3) da cidade de Belo
-        Horizonte, <strong>Lu Sacramento</strong> iniciou sua trajetória musical
-        ouvindo músicas populares antigas. Adorava colocar pra tocar vinis e
-        fitas k7 de sua avó: Serestas, boleros, chorinhos, sambas... Nelson
-        Gonçalves, Pixinguinha e Adoniram Barbosa foram alguns dos compositores
-        do qual seu ouvido, já captava o interesse pela música.
-      </p>
-      <p>
-        Aos 14 anos, começou seus estudos autodidaticamente quando ganhou seu
-        primeiro instrumento: um cavaquinho. Estudou percussão, canto, teatro e
-        improvisação no Centro Cultural Tambolelê. Em 2005, na vontade de
-        estudar o novo instrumento que adquiriu, um violão, recorreu ao
-        conservatório da
-        <a href="https://feabh.org.br/">FEA – Fundação de Educação Artística</a>
-        ,onde ingressou como bolsista através de uma bolsa social, isentando-o
-        de mensalidades. Lá, estudou violão clássico e teoria musical. Por
-        consequência, abriu possibilidades a recitais e apresentações solo e/ou
-        conjunto (bandas) em espaços públicos, eventos, festas particulares e
-        barzinhos bem como as primeiras composições e arranjos.
-      </p>
-      <p>
-        Das experiências criativas, veio o despertar por uma maior atuação na
-        área da escrita musical, do qual buscou o título de bacharel em
-        composição na
-        <a href="https://musica.ufmg.br/"
-          >Escola de Música da Universidade Federal de Minas Gerais (UFMG)</a
-        >
-        .
-      </p>
-      <p>
-        Desde 2006, Lu Sacramento atua na área educacional como oficineiro e
-        professor. Trabalhou em escolas públicas, instituições e projetos
-        culturais, a destacar a
-        <a
-          href="https://prefeitura.pbh.gov.br/fundacao-municipal-de-cultura/escola-livre-de-artes"
-          >Escola Livres de Artes – Arena da Cultura</a
-        >
-        , ministrando aulas de violão, musicalização e coordenando os arranjos
-        do Arena Instrumental e a Camerata de Violões. Também nesta área,
-        trabalhou como coordenador cultural na
-        <a
-          href="https://www.portal.contagem.mg.gov.br/portal/secretarias/33/secretaria-municipal-de-cultura"
-        >
-          Secretaria Municipal de Cultura, Esporte e Juventude, município de
-          Contagem </a
-        >.
-      </p>
-      <p>
-        Como compositor e instrumentista, participou de vários festivais como a
-        <a
-          href="https://prefeitura.pbh.gov.br/fundacao-municipal-de-cultura/festivais/viradacultural"
-          >Virada Cultural de Belo Horizonte</a
-        >,
-        <a
-          href="https://www.ufmg.br/cultura/index.php?option=com_content&amp;view=article&amp;id=1985&amp;Itemid=121"
-          >Festival de Inverno da UFMG</a
-        >
-        e
-        <a href="https://www.instagram.com/f5_festival/"
-          >Festival Independente de Contagem</a
-        >. Também é organizador do projeto
-        <a href="https://www.instagram.com/sururu.formado/">Sururu Formado</a>.
-      </p>
-    </div>
-    <!-- <h1>{{ title }}</h1>
-    <h2>Músico</h2>
-    <h2>Compositor</h2>
-    <h2>Professor</h2> -->
-  </div>
+  <fragment>
+    <p>
+      Cria do bairro Novo Glória, região noroeste (NO3) da cidade de Belo
+      Horizonte, <strong>Lu Sacramento</strong> iniciou sua trajetória musical
+      ouvindo músicas populares antigas. Adorava colocar pra tocar vinis e fitas
+      k7 de sua avó: Serestas, boleros, chorinhos, sambas... Nelson Gonçalves,
+      Pixinguinha e Adoniram Barbosa foram alguns dos compositores do qual seu
+      ouvido, já captava o interesse pela música.
+    </p>
+    <p>
+      Aos 14 anos, começou seus estudos autodidaticamente quando ganhou seu
+      primeiro instrumento: um cavaquinho. Estudou percussão, canto, teatro e
+      improvisação no Centro Cultural Tambolelê. Em 2005, na vontade de estudar
+      o novo instrumento que adquiriu, um violão, recorreu ao conservatório da
+      <a href="https://feabh.org.br/">FEA – Fundação de Educação Artística</a>
+      ,onde ingressou como bolsista através de uma bolsa social, isentando-o de
+      mensalidades. Lá, estudou violão clássico e teoria musical. Por
+      consequência, abriu possibilidades a recitais e apresentações solo e/ou
+      conjunto (bandas) em espaços públicos, eventos, festas particulares e
+      barzinhos bem como as primeiras composições e arranjos.
+    </p>
+    <p>
+      Das experiências criativas, veio o despertar por uma maior atuação na área
+      da escrita musical, do qual buscou o título de bacharel em composição na
+      <a href="https://musica.ufmg.br/"
+        >Escola de Música da Universidade Federal de Minas Gerais (UFMG)</a
+      >
+      .
+    </p>
+    <p>
+      Desde 2006, Lu Sacramento atua na área educacional como oficineiro e
+      professor. Trabalhou em escolas públicas, instituições e projetos
+      culturais, a destacar a
+      <a
+        href="https://prefeitura.pbh.gov.br/fundacao-municipal-de-cultura/escola-livre-de-artes"
+        >Escola Livres de Artes – Arena da Cultura</a
+      >
+      , ministrando aulas de violão, musicalização e coordenando os arranjos do
+      Arena Instrumental e a Camerata de Violões. Também nesta área, trabalhou
+      como coordenador cultural na
+      <a
+        href="https://www.portal.contagem.mg.gov.br/portal/secretarias/33/secretaria-municipal-de-cultura"
+      >
+        Secretaria Municipal de Cultura, Esporte e Juventude, município de
+        Contagem </a
+      >.
+    </p>
+    <p>
+      Como compositor e instrumentista, participou de vários festivais como a
+      <a
+        href="https://prefeitura.pbh.gov.br/fundacao-municipal-de-cultura/festivais/viradacultural"
+        >Virada Cultural de Belo Horizonte</a
+      >,
+      <a
+        href="https://www.ufmg.br/cultura/index.php?option=com_content&amp;view=article&amp;id=1985&amp;Itemid=121"
+        >Festival de Inverno da UFMG</a
+      >
+      e
+      <a href="https://www.instagram.com/f5_festival/"
+        >Festival Independente de Contagem</a
+      >. Também é organizador do projeto
+      <a href="https://www.instagram.com/sururu.formado/">Sururu Formado</a>.
+    </p>
+  </fragment>
 </template>
 
 <script>
@@ -98,9 +84,6 @@ export default {
   #music-page {
     width: 95vw;
     height: 80vh;
-  }
-  .description {
-    width: 65vw;
   }
 }
 

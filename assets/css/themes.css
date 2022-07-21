@@ -10,6 +10,9 @@
   --color-cinza-escuro-50: rgb(32, 32, 34, 0.5);
   --color-branco-50: rgb(219, 219, 219, 0.5);
 
+  --color-branco-90: rgb(219, 219, 219, 0.9);
+  --color-cinza-escuro-90: rgb(32, 32, 34, 0.9);
+
   /* LIGHT COLORS */
   --bg-light: var(--color-branco); /* bg */
   --bg-secondary-light: var(--color-branco); /*bg icone (ambos) */
@@ -17,6 +20,7 @@
   --color-primary-light: var(--color-azul-fosco); /* cor botao */
   --color-secondary-light: var(--color-branco); /* nada */
   --border-color-light: var(--color-cinza-claro); /* borda outra */
+  --color-bg-nav-light: var(--color-branco-90); /* bg nav */
 
   /* DARK COLORS */
   --bg-dark: var(--color-cinza-escuro);
@@ -25,6 +29,7 @@
   --color-primary-dark: var(--color-fosco);
   --color-secondary-dark: var(--color-branco);
   --border-color-dark: var(--color-cinza-claro);
+  --color-bg-nav-dark: var(--color-cinza-escuro-90);
 }
 
 /************ LIGHT THEME ***********************/
@@ -40,9 +45,10 @@
   --last-name-color: var(--color-cinza-escuro);
   --footer-color: var(--color-cinza-escuro-50);
   --color-h1: var(--color-cinza-escuro);
-  --color-p: var(--color-cinza-claro);
+  --color-p: var(--color-cinza-escuro);
   --color-a: var(--color-azul-fosco);
   --color-a-hover: var(--color-azul-brilhante);
+  --bg-nav: var(--color-bg-nav-light);
 }
 
 /*************** DARK THEME *********************/
@@ -61,6 +67,7 @@
   --color-p: var(--color-cinza-claro);
   --color-a: var(--color-azul-fosco);
   --color-a-hover: var(--color-azul-brilhante);
+  --bg-nav: var(--color-bg-nav-dark);
 }
 
 /******************** BODY *********************/
@@ -100,4 +107,19 @@ p {
 
 h1 {
   color: var(--color-h1);
+}
+
+#nav-title {
+  color: var(--color-cinza-claro) !important;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 2rem;
+}
+
+#nav-title:hover {
+  color: var(--color-azul-brilhante) !important;
+}
+
+.bg-nav {
+  background-color: var(--bg-nav);
+  position: absolute;
 }
