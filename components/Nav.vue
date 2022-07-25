@@ -63,7 +63,7 @@ export default {
   name: 'NavBar',
   data() {
     return {
-      isCollapsed: false,
+      isCollapsed: true,
     }
   },
 }

@@ -100,9 +100,15 @@ a:hover {
   font-size: 0.6rem;
 }
 
+.title {
+  font-family: 'Bebas Neue', cursive;
+}
+
 p {
   color: var(--color-p);
   text-align: justify;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
 }
 
 h1 {

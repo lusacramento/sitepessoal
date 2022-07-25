@@ -1,12 +1,14 @@
 <template>
-  <footer class="footer container-fluid">
-    <div class="row d-flex text-center">
-      <div class="col credits">
-        <p>
-          <i>&copy; 2022. Todos Direitos Reservados.<br />Feito pelo Autor</i>.
-        </p>
+  <footer class="footer d-flex justify-content-center align-items-center">
+    <div class="row">
+      <div class="col credits text-center">
+        &copy; 2022. Todos Direitos Reservados.<br />Feito pelo Autor.
       </div>
     </div>
+    <!-- <div class="row">
+      <div class="col">
+      </div>
+    </div> -->
   </footer>
 </template>
 
@@ -16,4 +18,11 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.footer {
+  height: 7vh !important;
+}
+.credits {
+  font-style: italic;
+}
+</style>
