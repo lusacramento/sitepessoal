@@ -37,9 +37,9 @@
         <div class="col-12">
           <NuxtLink to="/musica" class="a"> Música </NuxtLink>
         </div>
-        <div class="col-12">
+        <!-- <div class="col-12">
           <NuxtLink to="/reaja-comigo" class="a"> Reaja! </NuxtLink>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
