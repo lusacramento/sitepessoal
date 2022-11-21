@@ -1,17 +1,26 @@
 <template>
   <div id="reaja-comigo">
-    <h1>Reaja!</h1>
     <UnderConstruction />
   </div>
 </template>
 
 <script>
-import UnderConstruction from '~/components/UnderConstruction.vue'
+// import UnderConstruction from '~/components/UnderConstruction.vue'
 export default {
   name: 'ReajaComigo',
-
   components: {
-    UnderConstruction,
+    // UnderConstruction,
+  },
+    layout: 'pages',
+    data() {
+      return {
+        title: "Reaja Comigo",
+      }
+    },
+     created() {
+     this.$bus.$emit('props', {
+      title: this.title,
+    })
   },
 }
 </script>

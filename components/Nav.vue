@@ -35,24 +35,24 @@
         :class="{ 'd-flex': !isCollapsed }"
         class="content-menu navbar-nav justify-content-center"
       >
-        <li class="nav-item">
+        <li class="nav-item" @click="closeMenu()">
           <NuxtLink id="" to="/" class="nav-link dropdown"
             >Página Inicial</NuxtLink
           >
         </li>
-        <li class="nav-item">
+        <li class="nav-item" @click="closeMenu()">
           <NuxtLink to="/desenvolvimento-web" class="nav-link dropdown"
             >Desenvolvimento Web</NuxtLink
           >
         </li>
-        <li class="nav-item">
+        <li class="nav-item" @click="closeMenu()">
           <NuxtLink to="/musica" class="nav-link dropdown"> Música</NuxtLink>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item" @click="closeMenu()">
           <NuxtLink to="/reaja-comigo" class="nav-link dropdown">
             Reaja!</NuxtLink
           >
-        </li>
+        </li> -->
       </ul>
     </div>
   </nav>
@@ -65,6 +65,11 @@ export default {
     return {
       isCollapsed: true,
     }
+  },
+  methods: {
+    closeMenu() {
+      this.isCollapsed = !this.isCollapsed
+    },
   },
 }
 </script>

@@ -3,11 +3,9 @@
     <header id="header">
       <Nav />
     </header>
-    <main id="main" class="router-view">
-      <div
-        class="container-fluid d-flex justify-content-around align-items-center"
-      >
-        <div class="row d-flex justify-content-center align-items-center">
+    <main id="main" class="router-view container-fluid d-flex justify-content-around align-items-center">
+ 
+        <div class="row justify-content-center align-items-center">
           <div class="col-12 col-lg-3 col-xl-3">
             <h1 class="title text-center">{{ title }}</h1>
           </div>
@@ -15,7 +13,6 @@
             <Nuxt />
           </div>
         </div>
-      </div>
     </main>
     <div id="footer">
       <Footer></Footer>

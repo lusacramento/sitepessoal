@@ -101,7 +101,6 @@ export default {
   },
 
   created() {
-    // this.$emit('Música')
     this.$bus.$emit('props', {
       title: this.title,
     })
